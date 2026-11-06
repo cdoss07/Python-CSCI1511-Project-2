@@ -16,5 +16,16 @@ class Player:
         summary = f'\n{self.name} 2026 Season Totals'
 
         for stats, value in self.season_stats.items():
-            summary += f'\n{stat}: {value}'
-            return summary
+            summary += f'\n{stats}: {value}'
+        return summary
+
+
+class WideReceiver(Player):
+    def __init__(self, name, season_stats, weekly_stats):
+        super().__init__(name, season_stats, weekly_stats)
+        self.position = "Wide Receiver"
+
+class TightEnd(Player):
+    def __init__(self, name, season_stats, weekly_stats):
+        super().__init__(name, season_stats, weekly_stats)
+        self.position = "Tight End"
