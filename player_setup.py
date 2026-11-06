@@ -18,6 +18,14 @@ class Player:
         for stats, value in self.season_stats.items():
             summary += f'\n{stats}: {value}'
         return summary
+    
+    
+    def weekly_summary(self):
+        summary = f"\n{self.name}'s Weekly Game Log"
+
+        for game in self.weekly_stats:
+            summary += f"\nWeek {game['week']}: {game['receptions']} rec, {game['yards']} yds, {game['touchdowns']} TD" 
+        return summary
 
 
 class WideReceiver(Player):
