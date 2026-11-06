@@ -33,10 +33,10 @@ class Menu:
             stat_type = input("Type 'season' or 'weekly': ").strip()
 
             if stat_type == 'season':
-                print(player.season_stats())
+                print(player.season_summary())
         
             elif stat_type == "weekly":
-                print(player.weekly_stats())
+                print(player.weekly_summary())
 
             else:
                 print("INVALID CHOICE")
