@@ -5,6 +5,7 @@ Christian Doss
 11/5/2026
 """
 
+
 class Menu:
     def __init__(self, players_stats):
         self.players_stats = players_stats
@@ -48,5 +49,5 @@ class Menu:
         if not self.search_history:
             print("You haven't searched for any players yet")
         else:
-            for player in self.search_history
-            print(player)
+            for player in self.search_history:
+                print(player)

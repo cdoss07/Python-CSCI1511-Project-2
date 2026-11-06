@@ -7,6 +7,7 @@ Christian Doss
 import sys
 from menu import Menu
 from player_data import nfl_players
+from player_setup import Player
 
 def main():
     records = player_records()
