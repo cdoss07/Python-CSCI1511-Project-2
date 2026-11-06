@@ -5,8 +5,7 @@ Christian Doss
 11/5/2026
 """
 
-nfl_players =  """
-{
+nfl_players = {
     "Trey McBride": {
        "season stats": { "receptions": 26, "yards": 211, "touchdowns": 2  
        }, "weekly":[
@@ -40,4 +39,3 @@ nfl_players =  """
            ]
         }
 }
-"""
